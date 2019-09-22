@@ -1,0 +1,17 @@
+[
+    {
+        "DN": "Hoa",
+        "IsKeyAllowed": false,
+        "Name": "Admin"
+    },
+    {
+        "DN": "Quang",
+        "IsKeyAllowed": true,
+        "Name": "Defaut"
+    },
+    {
+        "DN": "Max",
+        "IsKeyAllowed": true,
+        "Name": "SC"
+    }
+]
