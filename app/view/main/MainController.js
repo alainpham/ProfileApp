@@ -11,6 +11,7 @@ Ext.define('ProfileApp.view.main.MainController', {
         //Ext.Msg.confirm('Confirm', 'Are you sure?', 'onConfirm', this);
         this.getViewModel().set('selectedProfile', record);
         console.log(record);
+        console.log(this.getViewModel().get('selectedProfileName'));
     },
 
 });

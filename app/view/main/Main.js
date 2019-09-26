@@ -27,15 +27,60 @@ Ext.define('ProfileApp.view.main.Main', {
         {
             title: 'Home',
             iconCls: 'x-fa fa-home',
-            layout: 'fit',
+            layout: 'vbox',
             // The following grid shares a store with the classic version's grid as well!
             items: [{
                 xtype: 'profileform'
             },
             {
                 xtype: 'profiledetailpanel'
+            },
+            {
+                xtype: 'tabpanel',
+                width: '100%', // take up all available width
+                height: 300,
+                style: 'background-color:#dfe8f6; ',
+                defaults: {
+                    bodyPadding: 15
+                },
+                items: [
+                    {
+                        xtype: 'panel',
+                        title: 'Cache',
+                        items: [
+                            {
+                                boxLabel: 'Utilisation d\'un élément physique (Token/SC)',
+                                name: 'caches',
+                                inputValue: '1',
+                                id: 'checkbox1',
+                            }],
+
+                    }, {
+                        // the contact tab using data from the developer record
+                        title: 'Mot de passe Windows',
+
+                        scrollable: 'vertical',
+                        //cls: 'dev-card-contact',
+                        //bind: {
+                        html: 'Mot de passe Windows'
+                        //}
+                    }
+                ]
+
+                /*xtype:'tab_profile', 
+                width: '100%', // take up all available width
+                height : 300,
+                flex: 1  */
+            },
+            {
+                buttons: [{ text: 'Modifier', isFor: 'modify' }
+                ]
             }
             ]
+        },
+        {
+            title: 'tto',
+            html: 'toto'
         }
     ]
 });
