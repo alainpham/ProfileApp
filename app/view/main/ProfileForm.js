@@ -8,6 +8,7 @@ Ext.define('ProfileApp.view.main.ProfileForm', {
     requires: [
         'ProfileApp.store.UserProfile'
     ],
+    layout: 'hbox',
 
     items: [
         {
@@ -28,7 +29,14 @@ Ext.define('ProfileApp.view.main.ProfileForm', {
                 select: 'onItemSelected'
             }
 
-        }
+        },
+        { xtype: 'button',
+        text: 'Add profile',
+        iconCls: 'x-fa fa-times' },
+        { xtype: 'button',
+        text: 'Delete Profile',
+        iconCls: 'x-fa fa-times' },
+
     ]
 
 

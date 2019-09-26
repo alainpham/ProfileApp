@@ -33,9 +33,6 @@ Ext.define('ProfileApp.view.main.Main', {
                 xtype: 'profileform'
             },
             {
-                xtype: 'profiledetailpanel'
-            },
-            {
                 xtype: 'tabpanel',
                 width: '100%', // take up all available width
                 height: 300,
@@ -44,6 +41,15 @@ Ext.define('ProfileApp.view.main.Main', {
                     bodyPadding: 15
                 },
                 items: [
+                    {
+                      xtype: 'panel',
+                      title: 'details',
+                      items: [
+                        {
+                            xtype: 'profiledetailpanel'
+                        }
+                      ]  
+                    },
                     {
                         xtype: 'panel',
                         title: 'Cache',
